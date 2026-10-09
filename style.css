@@ -1,22 +1,13 @@
-li:first-child {
-    color:teal;
+h1{ 
+    background-color:purple;
+    width:250px;
+    height:50px;
 }
-li:nth-child(2) {
-    color:red;
+p{
+    background-color: orangered;
+    width:150px;
 }
-li:nth-child(5) {
-    color:green;
-}
-li-nth-child(4) {
-    color:
-}
-li:hover {
-    color:purple;
-}
-
-h1{
-    color:blue;
-}
-h3{
-    color:blue;
+p{
+    background-color: teal;
+    height:300px;
 }
