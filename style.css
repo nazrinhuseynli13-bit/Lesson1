@@ -1,12 +1,5 @@
-.paragraph {
-    background-color: aqua;
-    margin-bottom: 60px;
-}
-.box {
-    background-color: teal;
-    margin:40px;
-    padding:15px 25 px;
-    width: 200px;
-    border: 5px solid black;
-    box-sizing: content-box;
+h1 {
+    weight: 900px;
+    background-color:#f0fff8;
+
 }
