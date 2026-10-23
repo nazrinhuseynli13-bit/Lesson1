@@ -1,5 +1,178 @@
-h1 {
-    weight: 900px;
-    background-color:#f0fff8;
-
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100hv;
+    background-color: #eeeeee;
+    font-family:Arial, Helvetica, sans-serif
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.boxes {
+    width:100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+.card {
+    width: 480px;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 28px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 8px 18 px;
+    display: flex;
+    flex-direction: column;
+}
+.purple,p {
+    background-color: linear-gradient(135 deg,#8656df,#bd82ed);
+}
+.black ,p{
+background-color: linear-gradient (135deg,#252633,#080b18);
+}
+.green,p {
+background-color: linear-gradient ( 135deg,#00a84f,#27c66b);
+}
+.blue,p {
+    background-color: linear-gradient (135deg,#0876e8,#1745b5);
+}
+.chip {
+    width:56px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: linear-gradient (135deg,#e5d49b,#f9e8ae,#c9ad65);
+    border:2 px solid #b9a15e;
+    position: relative;
+    flex-shrink: 0;
+}
+.chip:: before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 17px;
+    width: 18px;
+    border-left: 1px solid #a58b4f;
+    border-right: 1px solid #a58b4f
+}
+.number {
+    font-size: 27px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+.owner {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 7px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.date span {
+    font-size: 18px;
+}
+.visa {
+    font-size: 43px;
+    font-style: italic;
+    font-weight: 900;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bank logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #eeeeee;
+}
+.bank logo strong  {
+font-size: 22px;
+}
+. bank logo small {
+    display: block;
+    font-size: 14px;
+}
+.emblem {
+    font-size: 34px;
+    font-weight: bold;
+}
+.sber {
+    color: #c1e8d0;
+}
+.sber strong {
+    font-size: 23px;
+}
+.vtb strong {
+    font-size: 27px;
+    font-style: italic;
+}
+.mastercard {
+    position: relative;
+    width: 105px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mastercard span {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+}
+.mastercard span:first-child {
+    background: #eb3939;
+    left: 12px;
+}
+.mastercard span:nth-child (2) {
+    background:#f5a623;
+    right:12px;
+    mix-blend-mode:screen;
+}
+.mastercard b {
+    position: relative;
+    z-index: 1;
+    font-size: 10px;
+    color: white;
+}
+@media (max-width:550px) {
+    body {
+        padding: 15px;
+    }
+}
+. card {
+    min-height: 250px;
+    padding: 20px;
+}
+.number {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.owner {
+    font-size: 15px;
+}
+.visa {
+    font-size: 34px;
+}
+. bank logo strong {
+    font-size: 17px;
 }
